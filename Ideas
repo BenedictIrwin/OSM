@@ -11,4 +11,17 @@ Things to try:
 - For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. 
 
 Descriptors:
-- For descriptors a first pass will be to use the StarDrop Automodeller descriptors.
+- For descriptors a first pass will be to use the StarDrop Automodeller descriptors. [DONE]
+
+
+Test:
+
+- As a first guess try a randomly held out 20% test set.
+- Generate 5-fold CV on training set and check to see if any columns have no values in any of the test sets.
+- The % data are very sparse
+
+
+Consider:
+
+- transform EC50 columns to pEC50 (i.e. 6-log_10(EC50))
+- How to handle percentages?
