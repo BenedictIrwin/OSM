@@ -8,3 +8,11 @@ Tom Whitehead works at Intellegens Ltd.
 
 As a first step we will attempt to fill in the data matrix using some deep learning methods and provide this to the community.
 The next step will likely be trying to construct a binary that can recieve SMILES strings and give predictions.
+
+We will attempt to use the Alchemite method as described in this publication: 
+Imputation of Assay Bioactivity Data Using Deep Learning
+T. M. Whitehead, B. W. J. Irwin, P. Hunt, M. D. Segall, and G. J. Conduit
+Journal of Chemical Information and Modeling 2019 59 (3), 1197-1204
+DOI: 10.1021/acs.jcim.8b00768
+
+https://pubs.acs.org/doi/10.1021/acs.jcim.8b00768
