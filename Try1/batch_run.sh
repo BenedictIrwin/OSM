@@ -1,0 +1,1 @@
+cd OSM_Try1/Alchemite_Folder ; bash run.sh ; cd ../.. ;
