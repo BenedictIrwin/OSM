@@ -1,13 +1,8 @@
 Ideas:
 
-- We will impute the missing values in the file.
+- We will impute the missing values in the file using the Alchemite technology.
 
-Things to try:
-
-- We should probably ignore the qualifiers, some of the data are suspiciously round numbers, which don't have qualifiers anyway... 
-[ I have removed them for now, if it doesn't work I will go back]
-
-- For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. [DONE]
+Some of the entries appear to be duplicate simple SMILES. We should merge these rows [To Do]
 
 Descriptors:
 - For descriptors a first pass will be to use the StarDrop Automodeller descriptors. [DONE]
@@ -26,3 +21,11 @@ Consider:
 - How to handle percentages?
 - Some compounds have no data at all... Are these test compounds? 
 - Might place these in a seperate file for training of any models.
+
+
+Things to try:
+
+- We should probably ignore the qualifiers, some of the data are suspiciously round numbers, which don't have qualifiers anyway... 
+[ I have removed them for now, if it doesn't work I will go back]
+
+- For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. [DONE]
