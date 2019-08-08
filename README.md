@@ -6,8 +6,7 @@ This is a contribution to the https://github.com/OpenSourceMalaria/Series4_Predi
 Ben Irwin works at Optibrium Ltd.
 Tom Whitehead works at Intellegens Ltd.
 
-As a first step we will attempt to fill in the data matrix using some deep learning methods and provide this to the community.
-The next step will likely be trying to construct a binary that can recieve SMILES strings and give predictions.
+We will attempt to fill in the data matrix using some deep learning methods and provide this to the community.
 
 We will attempt to use the Alchemite method as described in this publication: 
 Imputation of Assay Bioactivity Data Using Deep Learning
