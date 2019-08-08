@@ -7,8 +7,7 @@ Things to try:
 - We should probably ignore the qualifiers, some of the data are suspiciously round numbers, which don't have qualifiers anyway... 
 [ I have removed them for now, if it doesn't work I will go back]
 
-
-- For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. 
+- For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. [DONE]
 
 Descriptors:
 - For descriptors a first pass will be to use the StarDrop Automodeller descriptors. [DONE]
@@ -25,3 +24,5 @@ Consider:
 
 - transform EC50 columns to pEC50 (i.e. 6-log_10(EC50))
 - How to handle percentages?
+- Some compounds have no data at all... Are these test compounds? 
+- Might place these in a seperate file for training of any models.
