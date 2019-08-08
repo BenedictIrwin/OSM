@@ -1,31 +1,33 @@
-Ideas:
-
-- We will impute the missing values in the file using the Alchemite technology.
-
-Some of the entries appear to be duplicate simple SMILES. We should merge these rows [To Do]
+Project Aims:
+- We will impute the missing values in the file using the Alchemite technology as described in the publication: 
+https://pubs.acs.org/doi/10.1021/acs.jcim.8b00768
 
 Descriptors:
 - For descriptors a first pass will be to use the StarDrop Automodeller descriptors. [DONE]
 
-
 Test:
-
 - As a first guess try a randomly held out 20% test set.
 - Generate 5-fold CV on training set and check to see if any columns have no values in any of the test sets.
-- The % data are very sparse
+- The % data are very sparse (see if this is a problem) [To do]
+
+Things to Consider:
 
 
-Consider:
+Steps taken: ------------------------------------------------------------------
 
+Data Transforms
 - transform EC50 columns to pEC50 (i.e. 6-log_10(EC50))
-- How to handle percentages?
+- How to handle percentages? (used a logit transform for now)
 - Some compounds have no data at all... Are these test compounds? 
-- Might place these in a seperate file for training of any models.
 
-
-Things to try:
+(Removed these compounds, apparently not test compounds, but at least compounds of interest)
+Placed these in a seperate file for training of any models.
 
 - We should probably ignore the qualifiers, some of the data are suspiciously round numbers, which don't have qualifiers anyway... 
 [ I have removed them for now, if it doesn't work I will go back]
 
-- For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. [DONE]
+For the points with multiple values X;Y;Z we can take the geometric average of the EC50, i.e. arithmetic average of pEC50. [DONE]
+
+Some of the entries appear to be duplicate simple SMILES. We should merge these rows [DONE]
+Note: The SMILES FC1=C(F)C=CC(C(OC)COC2=CN=CC3=NN=C(C4=CC=C(C#N)C=C4)N32)=C1 was the only duplicate, perhaps lost some stereochemistry etc.? 
+I have merged the two rows into 1, using the geomean where appropriate.
