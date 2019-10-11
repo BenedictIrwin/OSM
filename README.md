@@ -64,4 +64,4 @@ Single Shot Inhibition %,R^2,0.93
 Average R2 = 0.78675246513352
 
 
-Some of the assays are to be trusted much more than others.
+Some of the assays are to be trusted much more than others. Can't really comment on how well this model will work for the test compounds. It might depend on a few factors such as overlap of chemical space, whether my processing of the file was correct etc. Let's see what happens.
