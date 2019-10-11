@@ -33,9 +33,9 @@ EC50Chembl(uM),R^2,0.63
 
 Ion Regulation Activity,R^2,0.59
 
-Most Acidic pKa,R^2,0.39
+Most Acidic pKa,R^2,0.39 (proxy column from QM model)
 
-Most Basic pKa,R^2,0.78
+Most Basic pKa,R^2,0.78 (proxy column from QM model)
 
 PfaI EC50 (Inh),R^2,0.70
 
