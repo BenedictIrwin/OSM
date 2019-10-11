@@ -31,7 +31,7 @@ I made changes to the Master chemicals list.
 Working with project: OSMMaster_full
 EC50Chembl(uM),R^2,0.63
 
-Ion Regulation Activity,R^2,0.59,0.00,0.50,0.18 v 0.20
+Ion Regulation Activity,R^2,0.59
 
 Most Acidic pKa,R^2,0.39
 
